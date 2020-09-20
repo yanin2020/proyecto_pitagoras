@@ -2,7 +2,7 @@
 *
 {
   margin:0;
-  padding:5px;
+  padding:2px;
   box-sizing:border-box;
     }
 .header
@@ -14,7 +14,7 @@ body
 {
   min-height: 150vh;
 } 
-
+ 
 #title
 {
 font-family: 'Acme','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,9 +45,19 @@ font-family: 'Acme','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
   
 }
 
-@media (max-width: 460px) {
-  .facet_sidebar {
-    display: none;
+@media (min-width: 460px)and(max-width: 460px) {
+  #img-div {
+  max-width: 100%;
+  position: relative;
+  height:100vh;
+  background: url(https://images.pexels.com/photos/4002636/pexels-photo-4002636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 );
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  clip-path:circle(180vh at 50% -80vh);
+  
   }
 }
 
