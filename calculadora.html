@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head><title>Calculadora</title>
+<meta charset="utf-8"> 
+<!--Estilos CSS-->
+<style> 
+body {font-family: sans-serif; text-align:center;} 
+#calculadora { font: bold 14px Arial,sans-serif; background-color: #9DD2EA;  border-radius: 45px; height: auto; margin: 0 auto; 
+    padding: 20px 20px 9px; width: 285px;} 
+.parteSuperior .pantalla { background-color: rgba(0, 0, 0, 0.2); border-radius: 3px; color: #FFFFFF; float: right; font-size: 17px; 
+height: 40px; letter-spacing: 1px; line-height: 40px; padding: 0 10px; text-align: right; width: 180px;} 
+.teclas, .parteSuperior {overflow: hidden; } 
+.teclas span, .parteSuperior span.limpiar {     background-color: #FFFFFF; border-radius: 3px; color: #888888; cursor: pointer; 
+    float: left; height: 36px; line-height: 36px; margin: 0 7px 11px 0; text-align: center; transition: all 0.4s ease 0s; width: 66px;} 
+.parteSuperior span.limpiar { background-color:#FF7C87;} 
+.teclas span.operador { background-color: #FFDAB9; margin-right: 0; } 
+.teclas span.igual { background-color: #F1FF92; color: #888E5F;} 
+.parteSuperior span.limpiar, { background-color: #FF9FA8; color: #FFFFFF; } 
+.teclas span:hover, .teclas span.igual:hover, .parteSuperior span.limpiar:hover { 
+    background-color: #9C89F6; color: #FFFFFF; 
+} 
+</style> 
+
+<script type="text/javascript"> 
+function pulsada (tecla) { 
+var listaNodosPantalla = document.getElementsByClassName('pantalla'); 
+var nodoTextoPantalla = listaNodosPantalla[0].firstChild; 
+switch(tecla) { 
+  case 'C': 
+  nodoTextoPantalla.nodeValue = ' '; 
+  break; 
+  case '=': 
+  var resultado = eval(nodoTextoPantalla.nodeValue); 
+  nodoTextoPantalla.nodeValue = resultado; 
+  break; 
+  default:  
+  nodoTextoPantalla.nodeValue = nodoTextoPantalla.nodeValue + tecla; 
+  break; 
+} 
+} 
+</script> 
+</head> <br><br><br><br>
+
+<body>
+<div id="cabecera">
+<h2>Mi primera calculadora</h2>
+<h3>Ejemplo calculadora JavaScript</h3>
+</div> 
+<!-- Calculadora --> 
+<div id="calculadora"> 
+  <!-- pantalla y tecla limpiar --> 
+  <div class="parteSuperior"> 
+    <span class="limpiar" onclick="pulsada('C')">C</span> 
+    <div class="pantalla"> </div> <!--Ojo tenemos un espacio para que exista nodeValue--> 
+  </div> 
+  <div class="teclas"> 
+    <!-- operadores y otras teclas --> 
+    <span onclick="pulsada('7')">7</span> 
+    <span onclick="pulsada('8')">8</span>
+    <span onclick="pulsada('9')">9</span> 
+    <span class="operador" onclick="pulsada('+')">+</span> 
+    <span onclick="pulsada('4')">4</span> 
+    <span onclick="pulsada('5')">5</span> 
+    <span onclick="pulsada('6')">6</span> 
+    <span class="operador" onclick="pulsada('-')">-</span> 
+    <span onclick="pulsada('1')">1</span> 
+    <span onclick="pulsada('2')">2</span> 
+    <span onclick="pulsada('3')">3</span> 
+    <span class="operador" onclick="pulsada('/')">÷</span> 
+    <span onclick="pulsada('0')">0</span> 
+    <span onclick="pulsada('.')">.</span> 
+    <span class="igual" onclick="pulsada('=')">=</span> 
+    <span class="operador" onclick="pulsada('*')">x</span> 
+    </div> 
+    </div> 
+</body> 
+</html>  
