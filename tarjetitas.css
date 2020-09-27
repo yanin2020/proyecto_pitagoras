@@ -7,7 +7,8 @@
 }
 body
 {
-  display:flex;
+  /*display:flex;*/
+  width: 100%;
   justify-content: center;
   align-items: center;
   background: #16384c;
@@ -15,12 +16,12 @@ body
 .container
 {
   position: relative;
-  width: 1100px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 10px;
 }
 .container .card
 {
@@ -73,5 +74,46 @@ body
   margin-top: -40px;
   transition-delay: 0.3s;
 }
+button
+{
+  background-color: aquamarine;
+}
+button:hover {
+  background-color: rgb(0, 255, 98);
+  transition: background-color 1s;
+}
+.btn
+{
+  width:100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+.footer{
+  
+  width:100%;
+  /*margin: auto;*/
+  background-color:rgb(229, 170, 231);
+  padding: 20px;
+  
+}
+.footer h4{
+  color:white;
+  font-family:cursive;
+  text-align:center;
+}
+
+.footer
+
+{
+  width: 100%;
+  
+}
+
+
 
 
