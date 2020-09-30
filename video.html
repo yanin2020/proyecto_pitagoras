@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hong Kong</title>
+  <style>
+    body, h1 {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .banner {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .banner h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 20vw;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: -4vw;
+      background-color: #000;
+      color: #fff;
+      line-height: 120vh;
+      mix-blend-mode: multiply;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <!-- Read about playsinline at https://webkit.org/blog/6784/new-video-policies-for-ios/ -->
+    <video autoplay playsinline muted loop>
+      <source src="https://player.vimeo.com/external/455583855.sd.mp4?s=57108ab9852267f014066e3ee5e86561cb71ece7&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+    </video>
+    <h1>OnlyCats</h1>
+    <script>
+      document.querySelector('video').playbackRate = 1.5;
+    </script>
+  </div>
+</body>
+</html>

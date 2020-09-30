@@ -4,28 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>tarjetitas</title>
+  <title>OnlyCats</title>
   <!--Aquí van las fuentes de google-->
   <link href="tarjetitas.css"
       rel="stylesheet" type="text/css">
+  <!--Aqui abajo va el favicon-->    
+  <link rel="shortcut icon" href="https://www.bing.com/images/blob?bcid=Toqt9BQGSdoBv0nxweygIhLWcNwg.....68" />
+  <!--Aqui termina el favicon-->      
 </head>
 <body>
-<header>
+<header id="header">
 <div class="encabezado">
-  <img src="https://i.pinimg.com/564x/e5/20/88/e52088adfacd4bd351ce18e868ccec2f.jpg" alt="Logo de OnlyCats" class="logo">
-   <nav>
+  <img id="header-img"src="https://i.pinimg.com/564x/e5/20/88/e52088adfacd4bd351ce18e868ccec2f.jpg" alt="Logo de OnlyCats" class="logo">
+   <nav class="nav-link">
     <ul>
-      <li><a href="#">Juguetes</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Kenels</a></li>
+      <li><a class="nav-link" href="#">Home</a></li>
+      <li><a class="nav-link"  href="#producto">Productos</a></li>
+      <li><a class="nav-link" href="#contacto">Contacto</a></li>
     </ul>
    </nav>
 </div>
-  </header>
+</header>
+  <div class="container"></div>
+  <section id="hero">
+  <h1 class="principal">OnlyCats</h1>
+    <h2 class="slogan">La mejor atención para sus consentidos</h2>
+   <!--   <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+
+     <input id="email" type="email" value="" class="" /><br>
+      <input id="submit" value"" 
+        name="email"
+        id="email"
+        type="submit"
+        placeholder="Ingrese su email"
+        required class="btn" />  
+    </form>
+
+    <form id="form" action="https://freecatphotoapp.com/submit-cat-photo" target="_blank">
+  <input type="text" placeholder="Coloque su Email" required><input button type="submit" value"submit" class"btn"></button></form>-->
+
+  <form id="form" action="https://freecatphotoapp.com/submit-cat-photo" target="_blank">
+    <input type="text" placeholder="Ingrese su correo" required>
+    <input button type="submit" name="submit"
+        id="email" value="Enviar" class="btn"></button>
+</form>
+  </section>
+
 <div class="container">
 
   <!--Inicio tarjetita uno-->
-    <div class="card">
+    <div id= "producto" class="card">
       <div class="imgBx">
         <img src="https://novoregalos.com/55206-large_default/juguetes-para-gatos-incluye-8-piezas.jpg" alt="imagen de juguete">
       </div>
@@ -55,7 +83,7 @@
         <img src="https://www.kattosveterinaria.com/wp-content/uploads/2015/10/guacal-plastico-gatos-kattos-veterinaria-especializada-para-gatos-bogota-tienda-de-mascotas-catshop.jpg" alt="imagen de kenel">
       </div>
       <div class="context">
-             <h2>79$</h2>
+             <h2>49$</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div> <button class="btn">Comprar</button>
   </div>
@@ -72,10 +100,13 @@
         ></iframe>
   </section>
 </div>
-      
+   <script>
+      document.querySelector('video').playbackRate = 1.5;
+    </script>   
 </body>
-<footer> <div class="footer">
- <h4>&#169; Copyright-2020 Made with 
- <span style="color:red;">♥ by Yanin Tineo</span></h4>
+<footer id="contacto">
+  <div class="footer">
+ <h4> &#169; Copyright-2020 Made with 
+ <span style="color:red;">♥ by Yanin Tineo </span></h4>
 </div></footer>
 </html>
