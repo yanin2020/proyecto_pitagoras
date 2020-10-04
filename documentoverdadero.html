@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/documentoreal.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentos html</title>
+  
+  
+<link rel="stylesheet" href="./documentoverdadero_files/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="./documentoverdadero_files/documentoreal.css"></head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
+            </span>
+            <span class="title">Home</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <span class="title">Profile</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i>
+            </span>
+            <span class="title">Messages</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i>
+            </span>
+            <span class="title">Help</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i>
+            </span>
+            <span class="title">Setting</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+            <span class="title">Password</span>
+          </a>
+      </li>
+      <li>
+          <a href="http://127.0.0.1:5500/documentoreal.html#">   
+            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
+            </span>
+            <span class="title">Sign Out</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle" onclick="toggleMenu()"></div>
+  <script type="text/javascript">
+    function toggleMenu(){
+      let navigation = document.querySelector('.navigation');
+      let toggle= document.querySelector('.toggle');
+      navigation.classList.toggle('active'); 
+      toggle.classList.toggle('active'); 
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

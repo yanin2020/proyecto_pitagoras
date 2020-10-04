@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentación html</title>
+  <link rel="stylesheet" type="text/css" href="docu4.css">
+</head>
+<body>
+    <div class="toggle"></div>
+    <div class="overlay"></div>
+    <div class="menu">
+      <ul>
+          <li><a href="#">Etiqueta	Función</a></li>
+          <li><a href="#">Metadatos del documento</a></li>
+          <li><a href="#">Scripting</a></li>
+          <li><a href="#">Secciones</a></li>
+          <li><a href="#">Agrupación de Contenido</a></li>
+          <li><a href="#">Ediciones</a></li>
+          <li><a href="#">Contenido incrustado</a></li>
+          <li><a href="#">Datos tabulares</a></li>
+          <li><a href="#">Formularios</a></li>
+          <li><a href="#">Elementos interactivos</a></li>
+          <li><a href="#">DICCIONARIO HTML5</a></li>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  ></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.overlay').toggleClass('active')
+        $('.menu').toggleClass('active')
+      })
+    })
+  </script>
+</body>
+</html>
