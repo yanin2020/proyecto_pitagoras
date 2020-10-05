@@ -11,6 +11,9 @@ body
   min-height: 100vh;
   background: #6eb2d1;
 }
+body p{
+  color: aliceblue;
+}
 .navigation
 {
   position: fixed;
@@ -62,15 +65,16 @@ body
 }
 .navigation ul li a .icon .fa
 {
-  font-size: 24px;
+  font-size: 20px;
 }
 .navigation ul li a .title
 {
   position: relative;
   display: block;
-  padding: 0 10px;
+  padding: 0 5px;
   height: 60px;
   line-height: 60px;
+  font-size:12px;
   text-align: start;
   white-space: nowrap;
 }
@@ -97,7 +101,7 @@ body
   height: 100%;
   line-height: 60px;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   color:#fff;
 }
 .toggle.active:before
@@ -115,4 +119,10 @@ body
     left: 0px;
     width: 100%;
   }
+}
+.main-section
+{ 
+  margin-top: 50PX;
+  margin-left: 100px;
+  padding: 10px;
 }
