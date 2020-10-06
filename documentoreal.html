@@ -1,3 +1,15 @@
+<!--
+
+  realizado por: Yanin Tineo 03/10/2020
+Fuentes de consulta: Mozilla MDN, Wikipedia.
+https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos
+****Etiquetas HTML5 ordenadas según su FuncióN
+
+<!doctype html>	Define que el documento esta bajo el estandar de HTML 5
+
+<html>	Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento.
+*******************************************
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +22,12 @@
 </head>
 <body>
   <div class="navigation">
+  <nav id="navbar">
+  <header class="encabezado1">HTML5</header>
     <ul>
       <li>
           <a href="#etiqueta">   
-            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
+            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
             </span>
             <span class="title">Etiqueta	Función</span>
           </a>
@@ -82,162 +96,147 @@
           </a>
       </li>
     </ul>
+    </nav>
   </div>
-***********************************************************************
+<br><br>
+<main id="main-doc">
 <section class="main-section" id="etiqueta">
     <header>ETIQUETA FUNCIÓN</header>
     <article>
       <p>
-        JavaScript is a cross-platform, object-oriented scripting language. It
-        is a small and lightweight language. Inside a host environment (for
-        example, a web browser), JavaScript can be connected to the objects of
-        its environment to provide programmatic control over them.
+      <code>
+          OBSOLETAS O DEPRECATED (Ya no se deben utilizar, para evitar conflictos de navegación web)
+          <li>(acronym)</li>
+          <li>(applet)</li>
+          <li>(basefont)</li>
+          <li>(big)</li>
+          <li>(center)</li>
+          <li>(dir)</li>
+          <li>(font)</li>
+          <li>(frame)</li>
+          <li>(frameset)</li>
+          <li>(isindex)</li>
+          <code><li>(noframes)</li></code>
+          <code><li>(s)</li></code>
+          <code><li>(strike)</li></code>
+          <code><li>(tt)</li></code>
+          <code><li>(xmp)</li>  </code>        
       </p>
-
-      <p>
-        JavaScript contains a standard library of objects, such as Array, Date,
-        and Math, and a core set of language elements such as operators, control
-        structures, and statements. Core JavaScript can be extended for a
-        variety of purposes by supplementing it with additional objects; for
-        example:
-      </p>
+      <p>Las etiquetas anteriores ya no deben usarse al estra deprecadas, en CANIUSE podemos verlas al detalle</p
     </article>
-    **********************************************************************
-  </section>
+     </section>
+    
+ 
   <section class="main-section" id="metadatos">
     <header>METADATOS</header>
-    <article>
-      <P>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Magna fringilla urna porttitor rhoncus. Blandit volutpat maecenas volutpat blandit aliquam etiam. Tempus egestas sed sed risus. Consectetur lorem donec massa sapien faucibus et molestie. In vitae turpis massa sed elementum tempus egestas sed sed. Nec dui nunc mattis enim ut tellus elementum sagittis. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Pellentesque sit amet porttitor eget dolor morbi. Elementum nibh tellus molestie nunc non blandit massa. Purus faucibus ornare suspendisse sed nisi lacus sed. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Vitae congue eu consequat ac felis donec.
-  </P>
-  <P> <br>
-    Egestas purus viverra accumsan in nisl nisi. Venenatis cras sed felis eget. Ornare aenean euismod elementum nisi. Nisl vel pretium lectus quam id leo in. Est placerat in egestas erat imperdiet sed euismod nisi. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Sed libero enim sed faucibus turpis in eu. Sit amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Egestas congue quisque egestas diam in arcu cursus. Netus et malesuada fames ac turpis egestas. Diam ut venenatis tellus in metus. Eget gravida cum sociis natoque penatibus. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.
-  </P>
-      
-    </article>
+    <p>
+        Metadatos del documento
+      <ul>
+        <li>(head)Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.</li>
+        <li>(title)Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.</li>
+        <li>(base)Define la URL base para las URLs relativas en la página.</li>
+        <li>(link)Usada para enlazar JavaScript y CSS externos con el documento HTML actual.</li>
+        <li>(meta)Define los metadatos que no pueden ser definidos usando otro elemento HTML.</li>
+        <li>(style)Etiqueta de estilo usada para escribir CSS en línea.</li>  
+      </ul>      
+    </p>
   </section>
-  <section class="main-section" id="secciones">
+    <section class="main-section" id="secciones">
     <header>SECCIONES</header>
-    <article>
-      <p>
-        Secciones
-
-<body>	
-Representa el contenido principal de un documento HTML. Solo hay un elemento <body> en un documento.
-<section> This element has been added in HTML5	Define una sección en un documento.
-<nav> This element has been added in HTML5	Define una sección que solamente contiene enlaces de navegación
-<article> This element has been added in HTML5	Define contenido autónomo que podría existir independientemente del resto del contenido.
-<aside> This element has been added in HTML5	Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido
-<h1>,<h2>,<h3>,<h4>,<h5>,<h6>	Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; <h1> es la de mayor y <h6> es la de menor importancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.
-<header> This element has been added in HTML5	Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.
-<footer> This element has been added in HTML5	Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.
-<address>	Define una sección que contiene información de contacto.
-<main>This element has been added in HTML5	Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.
-
-      </p>
-</pre>
-      
-    </article>
+    <p>
+        <li>(body)	
+            Representa el contenido principal de un documento HTML. Solo hay un elemento (body) en un documento.</li>
+            <li>(section) This element has been added in HTML5	Define una sección en un documento.</li>
+            <li>(nav) This element has been added in HTML5	Define una sección que solamente contiene enlaces de navegación</li>
+            <li>(article) This element has been added in HTML5	Define contenido autónomo que podría existir independientemente del resto del contenido.</li>
+            <li>(aside) This element has been added in HTML5	Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido</li>
+            <li>(h1),(h2),(h3),(h4),(h5),(h6)	Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; (h1) es la de mayor y (h6) es la de menor importancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.</li>
+            <li>(header) This element has been added in HTML5	Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.</li>
+            <li>(footer) This element has been added in HTML5	Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.</li>
+            <li>(address)	Define una sección que contiene información de contacto</li>.
+            <li>(main)This element has been added in HTML5	Define el contenido principal o importante en el documento. Solamente existe un elemento (main) en el documento.</li>
+    </p>
   </section>
   <section class="main-section" id="agrupacion">
     <header>AGRUPACIONES</header>
-    
-      To get started with writing JavaScript, open the Scratchpad and write your
-      first "Hello world" JavaScript code:
-      <code
-        >function greetMe(yourName) { alert("Hello " + yourName); }
-        greetMe("World");
-      </code>
-
-      Select the code in the pad and hit Ctrl+R to watch it unfold in your
-      browser!
-    
+    <p>
+        <li>(p)	Define una parte que debe mostrarse como un párrafo.</li>
+            <li>(hr)	Representa un quiebre temático entre párrafos de una sección o articulo o cualquier contenido.</li>
+            <li>(pre)	Indica que su contenido esta preformateado y que este formato debe ser preservado.</li>
+            <li>(blockquote)	Representa un contenido citado desde otra fuente.</li>
+            <li>(ol)	Define una lista ordenada de artículos.</li>
+            <li>(ul)	Define una lista de artículos sin orden.</li>
+            <li>(li)	Define un artículo de una lista enumerada.</li>
+            <li>(dl)	Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.</li>
+            <li>(dt)	Representa un término definido por el siguiente (dd).</li>
+            <li>(dd)	Representa la definición de los términos listados antes que él.</li>
+            <li>(figure) This element has been added in HTML5	Representa una figura ilustrada como parte del documento.</li>
+            <li>(figcaption) This element has been added in HTML5	Representa la leyenda de una figura.</li>
+            <li>(div)	Representa un contenedor genérico sin ningún significado especial.</li>
+      </p>
   </section>
   <section class="main-section" id="ediciones">
     <header>EDICIONES</header>
     <p>
-      You use variables as symbolic names for values in your application. The
-      names of variables, called identifiers, conform to certain rules.
+        <li>(ins)	Define una adición en el documento.</li>
+            <li>(del)	Define una remoción del documento.</li>            
     </p>
-    <p>
-      A JavaScript identifier must start with a letter, underscore (_), or
-      dollar sign ($); subsequent characters can also be digits (0-9). Because
-      JavaScript is case sensitive, letters include the characters "A" through
-      "Z" (uppercase) and the characters "a" through "z" (lowercase).
-    </p>
-    <p>
-      You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-      You can also use the Unicode escape sequences as characters in
-      identifiers. Some examples of legal names are Number_hits, temp99, and
-      _name.
-    </p>
+    
   </section>
   <section class="main-section" id="contenido">
     <header>CONTENIDO</header>
-    <article>
-      You can declare a variable in three ways:
       <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax
-        can be used to declare both local and global variables.
-      </p>
-      <p>
-        By simply assigning it a value. For example, <code>x = 42.</code> This
-        always declares a global variable. It generates a strict JavaScript
-        warning. You shouldn't use this variant.
-      </p>
-      <p>
-        With the keyword let. For example,<code> let y = 13.</code> This syntax
-        can be used to declare a block scope local variable. See Variable scope
-        below.
-      </p>
+          <li>(img)	Representa una imagen.</li>
+          <li>(iframe)	Representa un contexto anidado de navegación, es decir, un documento HTML embebido.</li>
+          <li>(embed) This element has been added in HTML5	Representa un punto de integración para una aplicación o contenido interactivo externo que por lo general no es HTML.</li>
+          <li>(object)	Representa un recurso externo, que será tratado como una imagen, un sub-documento HTML o un recurso externo a ser procesado por un plugin.</li>
+          <li>(param)	Define parámetros para el uso por los plugins invocados por los elementos (object).</li>
+          <li>(video) This element has been added in HTML5	Representa un video, y sus archivos de audio y capciones asociadas, con la interfaz necesaria para reproducirlos. </li>
+          <li>(audio) This element has been added in HTML5	Representa un sonido o stream de audio.</li>
+          <li>(source) This element has been added in HTML5	Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como (video) o (audio).</li>
+          <li>(track) This element has been added in HTML5	Permite a autores especificar una pista de texto temporizado para elementos multimedia como (video) o (audio).</li>
+          <li>(canvas) This element has been added in HTML5	Representa un área de mapa de bits  en el que se pueden utilizar scripts para renderizar gráficos como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.</li>
+          <li>(map)	En conjunto con (area), define un mapa de imagen.</li>
+          <li>(area)	En conjunto con (map), define un mapa de imagen.</li>
+          <li>(svg) This element has been added in HTML5	Define una imagen vectorial embebida.</li>
+          <li>(math) This element has been added in HTML5	Define una fórmula matemática.</li> </p>
     </article>
   </section>
   <section class="main-section" id="datos">
-    <header>DATOS</header>
+    <header>DATOS TABULARES</header>
     <article>
       <p>
-        When you declare a variable outside of any function, it is called a
-        global variable, because it is available to any other code in the
-        current document. When you declare a variable within a function, it is
-        called a local variable, because it is available only within that
-        function.
+          <li>(table)Representa datos con más de una dimensión.</li>
+              <li>(caption)Representa el título de una tabla.</li>
+              <li>(colgroup)Representa un conjunto de una o más columnas de una tabla.</li>
+              <li>(col)Representa una columna de una tabla.</li>
+              <li>(tbody)Representa el bloque de filas que describen los datos concretos de una tabla.</li>
+              <li>(thead)Representa el bloque de filas que describen las etiquetas de columna de una tabla.</li>
+              <li>(tfoot)Representa los bloques de filas que describen los resúmenes de columna de una tabla.</li>
+              <li>(tr)Representa una fila de celdas en una tabla.</li>
+              <li>(td)Representa una celda de datos en una tabla.</li>
+              <li>(th)</li>          
       </p>
-
-      <p>
-        JavaScript before ECMAScript 2015 does not have block statement scope;
-        rather, a variable declared within a block is local to the function (or
-        global scope) that the block resides within. For example the following
-        code will log 5, because the scope of x is the function (or global
-        context) within which x is declared, not the block, which in this case
-        is an if statement.
-      </p>
-      <code>if (true) { var x = 5; } console.log(x); // 5</code>
-      <p>
-        This behavior changes, when using the let declaration introduced in
-        ECMAScript 2015.
-      </p>
-
-      <code
-        >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-        defined</code
-      >
     </article>
   </section>
   <section class="main-section" id="formularios">
     <header>FORMULARIOS</header>
     <article>
       <p>
-        Global variables are in fact properties of the global object. In web
-        pages the global object is window, so you can set and access global
-        variables using the window.variable syntax.
-      </p>
-
-      <p>
-        Consequently, you can access global variables declared in one window or
-        frame from another window or frame by specifying the window or frame
-        name. For example, if a variable called phoneNumber is declared in a
-        document, you can refer to this variable from an iframe as
-        parent.phoneNumber.
+          <li>(fieldset)	Representa un conjunto de controles.</li>
+              <li>(legend)	Representa el título de un (fieldset).</li>
+              <li>(label)	Representa el título de un control de formulario.</li>
+              <li>(input)	Representa un campo de datos escrito que permite al usuario editar los datos.</li>
+              <li>(button>	Representa un botón.</li>
+              <li>(select)	Representa un control que permite la selección entre un conjunto de opciones.</li>
+              <li>(datalist) This element has been added in HTML5	Representa un conjunto de opciones predefinidas para otros controles.</li>
+              <li>(optgroup)	Representa un conjunto de opciones, agrupadas lógicamente.
+              <li>(option)	Representa una opción en un elemento (select), o una sugerencia de un elemento (datalist).</li>
+              <li>(textarea)	Representa un control de edición de texto multilínea.</li>
+              <li>(keygen) This element has been added in HTML5	Representa un control de par generador de llaves.</li>
+              <li>(output) This element has been added in HTML5	Representa el resultado de un cálculo.</li>
+              <li>(progress) This element has been added in HTML5	Representa el progreso de finalización de una tarea.</li>
+              <li>(meter) This element has been added in HTML5	Representa la medida escalar (o el valor fraccionario) dentro de un rango conocido.</li>            
       </p>
     </article>
   </section>
@@ -245,27 +244,163 @@ Representa el contenido principal de un documento HTML. Solo hay un elemento <bo
     <header>ELEMENTOS</header>
     <article>
       <p>
-        You can create a read-only, named constant with the const keyword. The
-        syntax of a constant identifier is the same as for a variable
-        identifier: it must start with a letter, underscore or dollar sign and
-        can contain alphabetic, numeric, or underscore characters.
+          <li>(details) This element has been added in HTML5	Representa un widget desde el que un usuario puede obtener información o controles adicionales.</li>     
+              <li>(summary) This element has been added in HTML5	Representa un resumen, título o leyenda para un elemento (details) dado.</li>
+              <li>(command) This element has been added in HTML5	Representa un comando que un usuario puede invocar.</li>
+              <li>(menu) This element has been added in HTML5	Representa una lista de comandos.</li>
       </p>
-
-      <code>const PI = 3.14;</code>
-      <p>
-        A constant cannot change value through assignment or be re-declared
-        while the script is running. It has to be initialized to a value.
-      </p>
-</article>
+    </article>
   </section>
   <section class="main-section" id="diccionario">
-    <header>DICCIONARIO</header>
+    <header>DICCIONARIO HTML5</header>
     <article>
-      <p>
-        You can create a read-only, named constant with the const keyword. The
-        syntax of a constant identifier is the same as for a variable
-        identifier: it must start with a letter, underscore or dollar sign and
-        can contain alphabetic, numeric, or underscore characters.
+      <p>       
+<ul>        
+<b>A</b>
+  <li>(a) Define un hipervínculo</li>
+  <li>(abbr)	Define una abreviación</li>
+  <li>(address)	Define la información de contacto del autor / propietario del documento</li>
+  <li>(area)	Define un área dentro de un mapa de imagen</li>
+  <li>(article)	Define un artículo</li>
+  <li>(aside)	Define el contenido lateral del contenedor de una página</li>
+  <li>(audio)	Define contenido de sonido</li>
+<br>
+<b>B</b>
+  <li>(b)	Define texto en negrita</li>
+  <li>(base)	Especifica la base donde se abrirán todas las URL del documento</li>
+  <li>(bdi)	Aísla una parte del texto que puede tener un formato diferente del texto externo</li>
+  <li>(bdo)	Sobreescribe la dirección del texto</li>
+  <li>(blockquote)	Define una sección que tiene otra fuente</li>
+  <li>(body)	Define el cuerpo del documento</li>
+  <li>(br)	Define un salto de línea</li>
+  <li>(button)	Define un botón clickeable</li>
+ <br> 
+<b>C</b>
+  <li>(canvas)	Se usa para dibujar gráficos en pantalla</li>
+  <li>(caption)	Define el título de una tabla</li>
+  <li>(cite)	Define el título de un trabajo</li>
+  <li>(code)	Define un trozo de código de programación</li>
+  <li>(col)	Especifica las propiedades de la columna para cada columna del elemento <colgroup></li>
+  <li>(colgroup)Especifica un grupo de una o más columnas de una tabla</li>
+  <li>(command)Define un botón command al que un usuario puede invocar</li>
+  <br>
+<b>D</b>
+<li>(datalist)	Especifica en un input una lista pre-definida de opciones</li>
+<li>(dd)	Define la descripción de un ítem en una lista de definición</li>
+<li>(del)	Define un texto que ha sido definido en un Mdocument</li>
+<li>(etails)	Define detalles adicionales que el usuario puede ver o esconder</li>
+<li>(dfn)	Define el término de una definición</li>
+<li>(dialog)	Define una caja o ventana de dialogo</li>
+<li>(div)	Define una sección en un documento</li>
+<li>(dl)	Define una lista de definición</li>
+<li>(dt)	Define un término (un ítem) en una lista de definición</li>
+<br>
+<b>E</b>
+<li>(em)Define énfasis en un texto</li>
+<li>(embed)	Define el contenedor de una aplicación externa (no html)</li>
+<b>F</b>
+<li>(fieldset)Grupo de elementos relacionados en un formulario</li>
+<li>(figcaption)Define el título para una figura <figure></li>
+<li>(figure)Especifica auto-contenido</li>
+<li>(footer)Define el pie de página de un documento</li>
+<li>(form)Define un formulario html</li>
+<br>
+<b>H</b>
+<li>(h1)a <h6>	Define encabezados o títulos</h6></li>
+<li>(head)Define información hacerca del documento</h6></li>
+<li>(header)Define la sección de encabezado del docuemnto</h6></li>
+<li>(hgroup)Grupo de encabezado (<h1> a <6>)</h6></li>
+<li>(hr)Define un cámbio de temática a partir de una línea dibujada</h6></li>
+<li>(html)Define la raíz del documento</h6></li>
+  <br>
+<b>I</b>
+<li>(i)Define una parte del texto de modo alternativo</li>
+<li>(iframe)Define un frame en línea</li>
+<li>(img)Define una imagen</li>
+<li>(input)Define un control de entrada de texto</li>
+<li>(ins)Define texto que ha sido insertado en un documento</li>
+  <br>
+<b>K</b>
+<li>(kbd)Define entrada del teclado</li>
+<li>(keygen)Define un campo generador de claves para formularios</li>
+  <br>
+<b>L</b>
+<li>(label)Define el rótulo para un elemento<input></li>
+<li>(legend)Define un título para los elementos <fieldset>, <figure>, <details></li>
+<li>(li)Define un ítem de una lista</li>
+<li>(link)Define la relación entre un documento y un recurso externo (generalmente con hojas de estilo)</li>
+<br>
+<b>M</b>
+<li>(map)Define un mapa de imagen del cliente</li>
+<li>(mark)Define texto resaltado o marcado</li>
+<li>(menu)Define la lista de un menú</li>
+<li>(meta)Define un metadato de un documento</li>
+<li>(meter)Define una medida escalar en un rango conocido</li>
+  <br>
+<b>N</b>
+<li>(nav)Define un link de navegación</li>
+<li>(noscript)Define un contenido alternativo para los usuarios que no soportan scripts del cliente</li>
+  <br>
+<b>O</b>
+<li>(objet)Define un objeto embebido</li>
+<li>(ol)Define una lista ordenada</li>
+<li>(optgroup)Define un grupo de opciones relacionadas en una lista desplegable</li>
+<li>(option)Define una opción en una lista desplegable</li>
+<li>(output)Define el resultado de un cálculo</li>
+  <br>
+<b>P</b>
+<li>(p)Define un párrafo</li>
+<li>(param)Define un parámetro para un objeto</li>
+<li>(pre)Define texto pre-formateado</li>
+<li>(progress)Representa el progreso de una tarea en una barra</li>
+  <br>
+<b>Q</b>
+<li>(q)Define una cita corta</li>
+  <br>
+<b>R</b>
+<li>(rp)Define que debe mostrar en navegadores que no soportan scripts de ruby</li>
+<li>(rt)Define una pronunciación de caracteres</li>
+<li>(ruby)Define una notación de ruby</li>
+  <br>
+<b>S</b>
+<li>(s)Define texto que no es correcto</li>
+<li>(samp)Define un ejemplo de salida de un programa</li>
+<li>(script)Define un script del lado cliente</li>
+<li>(section)Define una sección de un documento</li>
+<li>(select)Define un drop-down list</li>
+<li>(small)Define texto pequeño</li>
+<li>(source)Define los recursos para elementos multimedia</li>
+<li>(span)Define una pequeña sección de un documento</li>
+<li>(strong)Define un texto en negrita</li>
+<li>(style)Define un estilo para la información de un documento</li>
+<li>(sub)Define un texto que es subíndice</li>
+<li>(summary)Define un encabezado visible para el elemento <details></li>
+<li>(sup)Define un texto que es superíndice</li>
+  <br>
+<b>T</b>
+<li>(table)Define una tabla</ul></li>
+<li>(tbody)Define el cuerpo de una tabla</ul></li>
+<li>(td)Define una celda en una tabla</ul></li>
+<li>(textarea)Define un control de entrada de múltiples líneas</ul></li>
+<li>(tfoot)Agrupa los footer contenidos en una tabla</ul></li>
+<li>(th)Define una celda de encabezado en una tabla</ul></li>
+<li>(thead)Agrupa los encabezados de una tabla</ul></li>
+<li>(time)Define fecha / hora</ul></li>
+<li>(title)Define un título para el documento</ul></li>
+<li>(tr)Define una fila en una tabla</ul></li>
+<li>(track)Define texto de la pista para elementos multimedia (vídeo y audio)</ul></li>
+  <br>
+<b>U</b>
+<li>(ul)Define una lista desordenada</li>
+  <br>
+<b>V</b>
+<li>(var)Define una variable</li>
+<li>(video)Define un vídeo o película</li>
+  <br>
+<b>W</b>
+<li>(wbr)Define un posible salto de linea</li>
+  <br>
+</ul> 
       </p>
 
       <code>const PI = 3.14;</code>
@@ -273,11 +408,11 @@ Representa el contenido principal de un documento HTML. Solo hay un elemento <bo
         A constant cannot change value through assignment or be re-declared
         while the script is running. It has to be initialized to a value.
       </p>
+      
 </article>
   </section>
 
-
-*************************************************************************
+</main>
   <div class="toggle" onclick="toggleMenu()"></div>
   <script type="text/javascript">
     function toggleMenu(){
