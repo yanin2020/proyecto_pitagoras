@@ -1,0 +1,131 @@
+@import url();
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.sec
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#03a9f4,#e91e63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.custom-shape-divider-bottom-1602179797 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1602179797 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1602179797 .shape-fill {
+  fill: #FFFFFF;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo 
+{
+  font-size: 2em;
+  color:#fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .navigation
+{
+  position: relative;
+  display: flex;
+}
+header .navigation li
+{
+  list-style: none;
+}
+header .navigation li a
+{
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.content
+{
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+.content h2
+{
+  color: #fff;
+  font-size: 5em;
+  line-height: 1em;
+}
+.content h2 span
+{
+  color:#fff;
+  font-size: 0.7em;
+}
+.content p
+{
+  color:#fff;
+  margin: 10px 0 20px;
+}
+.content a
+{
+  padding: 10px 30px;
+  background: #fff;
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+}
+.bunny
+{
+  position: absolute;
+  bottom: 0;
+  height: 65%;
+  right: 100px;
+}
+@media (max-width: 991px)
+{
+  header
+  {
+    padding: 20px 40px;
+  }
+  header ul.navigation
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4,#e91e63); 
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+  }
+}
