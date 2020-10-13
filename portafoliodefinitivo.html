@@ -6,16 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mi portafolio</title>
   <link rel="stylesheet" href="portafoliodefinitivo.css">
-  <link rel="shortcut icon" href="https://www.bing.com/images/blob?bcid=Toqt9BQGSdoBv0nxweygIhLWcNwg.....68" />
+  <link rel="shortcut icon" href="https://i.pinimg.com/564x/20/0a/56/200a56e1df656541a6e7ff5343febd41.jpg" />
 </head>
 <body>
   <section class="sec">
     <header>
-      <a herf="#" class="logo">Logo</a>
+      <a herf="#" class="logo"><img src="" >Logo</a>
       <div class="toggleMenu" onclick="menuToggle();"></div>
       <ul class="navigation">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
         <li><a href="#">Trabajo</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
@@ -132,6 +131,47 @@
   </div>
     <!--fin tarejeta 8-->
   <!--Aqui termina las tarjetas-->
+  <!--aqui comienza el botón-->
+
+   
+  <a
+    href="https://codepen.io/FreeCodeCamp/"
+    class="btn2 btn-show-all"
+    target="_blank"
+    >Ver Todos<i class="fas fa-chevron-right"></i
+  ></a>
+
+  <!--aquí termina el botón-->
+  <br><br>
+      <section id="contacto" class="contact">
+      <div class="container2">
+        <form action="/suscripcion/" class="form-email">
+          <h3>¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjame tu email" id="email">
+          <button>Enviar</button>
+        </form>
+        <div class="social">
+          <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
+          <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
+          <a href="https://github.com/leonidasesteban" class="social-link github"></a>
+          <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Curso de Desarrollo web online 2020 <img src="images/platzi.png" width="80" alt="Yani"></p>
+        </div>
+        <div>
+          <p>
+            Designed with ❤️ by <a href="https://twitter.com/thespianartist">Yanin Tineo</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+<!-- fin footer CONTACT -->
+
   <script type="text/javascript">
   function menuToggle(){
     const toggleMenu = document.querySelector('.toggleMenu');
@@ -140,5 +180,7 @@
     navigation.classList.toggle('active');
   }
   </script>
+  
+
 </body>
 </html>
