@@ -288,13 +288,14 @@ button:hover {
 /*aqui termina el css de las tarjetas*/
 
 /*Inicio de botón mostrar todos los proyectos*/
-/*.btn2 {
+.btn2 {
   display: inline-block;
-  margin-bottom: 100px 0;
+  margin-bottom: 100px ;
   padding: .5rem 1rem;
   border-radius: 50px;
   color: pink;
   text-decoration: none;
+  flex-direction: column;
 }
 
 .btn-show-all {
@@ -457,3 +458,23 @@ button:hover {
 
 /*Fin footer contacto*/
 
+@media (min-width: 460px)and(max-width: 1160px)
+{
+ a .btn2 .btn-show-all
+  {
+    background-color: red:
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/*contacto*/
+#profile-link
+{
+  background: url("https://github.githubassets.com/images/modules/logos_page/Octocat.png");
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 20px 100px 30px 0;
+  text-align: center;
+  text-decoration: none;
+}
