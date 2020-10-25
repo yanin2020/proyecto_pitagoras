@@ -471,10 +471,16 @@ button:hover {
 /*contacto*/
 #profile-link
 {
-  background: url("https://github.githubassets.com/images/modules/logos_page/Octocat.png");
+  background: url("");
   font-size: 1.5em;
   padding: 20px;
   margin: 20px 100px 30px 0;
   text-align: center;
+  text-decoration: none;
+}
+
+p .yani
+{
+  color: #be31b2;
   text-decoration: none;
 }
