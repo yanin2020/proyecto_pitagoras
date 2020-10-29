@@ -1,0 +1,39 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(https://www.teknofilo.com/wp-content/uploads/2020/06/TikTok.jpg);
+  font-size: 2em;
+  width: 100%;
+}
+h1
+{
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 4em;
+  animation: animate 0.5s linear infinite;
+  margin-bottom: 350px;
+}
+@keyframes animate
+{
+  0%,100%
+  {
+    text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+  }
+  25%
+  {
+    text-shadow: 1.5px 1.5px 0 #0ff,-1.5px -1.5px 0 #f00;
+  }
+  50%
+  {
+    text-shadow: 1.5px -1.5px 0 #0ff,-1.5px 1.5px 0 #f00;
+  }
+  75%
+  {
+    text-shadow: -1.5px 1.5px 0 #0ff,1.5px -1.5px 0 #f00;
+  }
+}
