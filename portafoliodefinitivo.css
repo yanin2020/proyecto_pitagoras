@@ -13,6 +13,14 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+/*fuente del mi logo*/
+.logo
+{
+font-family: 'Princess Sofia', cursive, 'Verdana', 'sans-serif';
+ font-size:4.5rem;
+ color:white;
+}
+/**Acá termina el css de mi logo*/
 .sec
 {
   position: relative;
@@ -57,12 +65,13 @@ header
 }
 header .logo 
 {
-  font-size: 2em;
-  color:#fff;
+  font-size: 4em;
+  /*color:#fff;*/
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
 }
+ 
 header .navigation
 {
   position: relative;
@@ -267,7 +276,7 @@ header .navigation li a
 }
 button
 {
-  background-color: aquamarine;
+  /*background-color: rgb(250, 252, 251);*/
   
 }
 button:hover {
@@ -384,7 +393,8 @@ button:hover {
 
 .contact {
   width: 100%;
-  background-color: #056fff;
+  /*background-color: #056fff;*/
+  background: linear-gradient(#03a9f4,#e91e63);
   color: white;
   height: 150px;
   display: flex;
@@ -443,6 +453,7 @@ button:hover {
 
 .form-email h3 { 
   font-family: 'Source Sans Pro', sans-serif;
+  color: #f4fbff;
 }
 .container2 {
   /* border: 1px solid red; */
